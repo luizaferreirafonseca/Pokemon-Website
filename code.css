@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Krona+One&family=Montserrat&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.navbar{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    padding: 20px 0;
+
+}
+
+.pokemon_logo_title{
+    display: flex;
+}
+
+
+.pokemon_logo_title h1 {
+    padding-top: 15px;
+    padding-left: 15px;
+    font-weight: 900;
+}
+
+.menu{
+    display: flex;
+}
+
+.icones_texto{
+    display: flex;
+    padding-top: 20px;
+    padding-right: 60px;
+
+}
+
+.icones_texto p {
+    color: #808080;
+}
+
+.icones_texto p:hover{
+    color: black;
+    cursor: pointer;
+}
+
+.logo{
+    height: 70px;
+    padding-left: 30px;
+}
+
+
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    margin-left: 300px;
+    border: 1px solid black;
+   
+  }
+
+  .search-input {
+    border: none;
+    padding: 10px;
+    font-size: 1.5rem;
+    width: 300px;
+    height: 49px;
+    background-color: white;
+    
+  }
+
+ 
+
+  .search-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    height: 50px;
+    width: 55px;
+
+  }
+
+  .search-button:hover {
+    background-color: #555;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.click_here{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 60px;
+}
+
+.click_here p {
+    color: white;
+}
+
+.click_here:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.image_battle{
+    width: 100%;
+}
+
+.poke1{
+    width: 100%;
+    height: 600px;
+}
+
+
+
+
+
+
+
+.pokemons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.pokemons_choose p {
+    color: rgb(47, 47, 47);
+    margin-top: 30px;
+    border: 1px solid rgb(23, 23, 23);
+    padding: 20px;
+    cursor: pointer;
+}
+
+
+.pokemons_choose p:hover{
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#container_2{
+    background-color: #000000AD;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    display: none;
+   
+    
+}
+
+.caixa_2{
+    
+    background-color: rgb(159, 23, 23);
+    width: 600px;
+    height: 400px;
+    position: relative;
+    
+}
+
+
+.close-btn{
+    position: absolute;
+    left: 575px;
+    padding-top: 5px;
+    background: transparent; 
+    border: none; 
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+
+
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 60px;
+    width: 70%;
+    margin-left: 250px;
+    
+}
+
+
+
+.photo{
+    max-width: 100%;
+    border: 1px solid rgb(217, 216, 216);
+    border-radius: 60px;
+    margin-top: 10px;
+
+   
+}
+
+
+.card:hover{
+    transform: scale(1.1)
+}
+
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgb(212, 212, 212); 
+    border-radius: 15px;
+    width: 200px;
+    height: 220px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 10px 10px 0px rgba(163,163,163,0.3);
+-moz-box-shadow: 0px 10px 10px 0px rgba(163,163,163,0.3);
+box-shadow: 0px 10px 10px 0px rgba(163,163,163,0.3);
+
+    
+    
+    
+    
+}
+
+
+p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(172, 7, 62);
+    color: rgb(80, 80, 80);
+}
+
+
+
+
+
+.botoes{
+    display: flex;
+    gap: 40px;
+    padding-top: 20px;
+    
+    
+}
+
+.container_botoes{
+    border-top: 1px solid rgb(203, 201, 201);
+    display: flex;
+    gap: 40px;
+    padding: 34px;
+    padding-top: 20px;
+    
+
+}
+
+.choose{
+    font-size: 1.0rem;
+    cursor: pointer;
+    color: rgb(106, 104, 104);
+    
+}
+
+.choose:hover{
+    color: red;
+}
+
+.info{
+    font-size: 1.0rem;
+    cursor: pointer;
+    color:rgb(106, 104, 104);
+}
+
+.info:hover{
+    color: red;
+}
