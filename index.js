@@ -17,10 +17,9 @@ async function getOnePokemonAndInsertInHtml(url){
     let requisicao = await fetch(url);
     let pokemon = await requisicao.json();
 
-    // caixa.innerHTML = createCard(pokemon.name, pokemon.sprites.front_default)
 
     let novoCard = document.createElement('div');
-    novoCard.innerHTML = createCard(pokemon.name, pokemon.sprites.front_default); 
+    novoCard.innerHTML = createCard(pokemon); 
 
     caixa.appendChild(novoCard);
     
@@ -30,35 +29,69 @@ async function getOnePokemonAndInsertInHtml(url){
 
 let newBox = document.getElementById('container_2')
 
-function showNewBox(){
+function showNewBox(pokemon){
     newBox.style.display = "flex";
+
+    const html = `
+    <div class="main_container_info">
+        <h1>Pikachu</h1>
+        <div class="container">
+            <ul class="text">
+                <li class="list_item">Weight: ${pokemon.weight}</li>
+                <li class="list_item">Height: ${pokemon.height}</li>
+                <li class="list_item">Base experience: ${pokemon.base_experience} </li>
+            </ul>
+    
+            <img src="./img/pikachu.png" alt="" class="pikachu_photo">
+        </div>
+    </div>
+    `
+
+    newBox.innerHTML = html 
+
 }
 
 
-function createCard(nome, url){
+function closeNewBox(){
+    newBox.style.display = "none";
+}
+
+
+function createCard(pokemon){
    const html = `
   <div class="card">
-            <img src=${url} class="photo">
-            <p>${nome}</p>
+            <img src=${pokemon.sprites.front_default} class="photo">
+            <p>${pokemon.name}</p>
         <div class="botoes">
             <div class="container_botoes">
                 <p class="choose">Choose</p>
-                <p id=${nome} class="info">Info</p>
+                <p id=${pokemon.name} class="info" onclick="showNewBox(${pokemon})">Info</p>
             </div>
     </div>
 </div>
 
 `
-const infoBtn = document.getElementById(nome)
-infoBtn.onclick = showNewBox; 
-
 return html 
 
 }
 
+
+
+
+
+
+
 window.onload = function(){
     getAllPokemons();
 }
+
+
+
+
+
+
+
+
 
 
 

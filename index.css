@@ -18,6 +18,8 @@
     background-color: white;
     justify-content: space-between;
     padding: 20px 0;
+    position: fixed;
+    width: 100%;
 
 }
 
@@ -214,6 +216,7 @@
     width: 600px;
     height: 400px;
     position: relative;
+    border-radius: 15px;
     
 }
 
@@ -224,10 +227,14 @@
     padding-top: 5px;
     background: transparent; 
     border: none; 
-    color: #fff;
+    color: #c7c7c7;
     font-size: 20px;
     cursor: pointer;
     
+}
+
+.close-btn:hover{
+    color: black;
 }
 
 
@@ -240,6 +247,7 @@
     margin-top: 60px;
     width: 70%;
     margin-left: 250px;
+    margin-bottom: 60px;
     
 }
 
@@ -330,3 +338,74 @@ p {
 .info:hover{
     color: red;
 }
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: black;
+}
+
+.main_container{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+
+.second_container{
+    display: flex;
+    gap: 50px;
+    padding-top: 30px;
+}
+
+.list{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    font-size: 1.0rem;
+}
+
+
+
+.list li{
+    padding-top: 30px;
+    text-transform: uppercase;
+}
+
+.list li:hover{
+    color: #555;
+}
+
+.nicks i{
+    color: white;
+    padding-top: 30px;
+    padding-left: 20px;
+    font-size: 1.5rem;
+    
+}
+
+.nicks i:hover{
+    color: rgb(200, 33, 33);
+}
+
+.rodape{
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+    padding-bottom: 40px;
+}
+
+.rodape p{
+    font-size: 0.8rem;
+    color: rgb(147, 141, 141);
+}
+
