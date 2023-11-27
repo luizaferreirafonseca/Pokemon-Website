@@ -19,7 +19,7 @@ O site já contém header e footer.
 
 ## :rocket: Link do Pages
 
-
+https://luizaferreirafonseca.github.io/Pokemon-Website/
 
 ## :dart: Status do projeto
 
