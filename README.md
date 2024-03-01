@@ -23,5 +23,5 @@ https://luizaferreirafonseca.github.io/Pokemon-Website/
 
 ## :dart: Status do projeto
 
--> Em desenvolvimento para que eu possa adicionar mais funcionalidades com objetivo de avançar nos meus conhecimentos.
+-> Em desenvolvimento para que eu possa adicionar mais funcionalidades com objetivo de avançar nos meus conhecimentos. Responsividade ainda não aplicada.
 
